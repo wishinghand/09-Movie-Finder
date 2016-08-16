@@ -20,13 +20,13 @@
             var query = 's=' + movieTitle;
             var defer = $q.defer();
 
-            $http({
+            return $http({
                 method: "GET",
                 url: baseURL + query
             }).then(function(response){
-
+                return response.data;
             }).then(function(response){
-
+                return response;
             })
         }
     }
