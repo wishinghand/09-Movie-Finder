@@ -1,0 +1,32 @@
+{
+  "name": "movie-finder",
+  "version": "1.0.0",
+  "description": "A movie finder app using OMDB",
+  "main": "./src/app.module.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wishinghand/09-Movie-Finder.git"
+  },
+  "author": "Jason Land & Katie Marino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wishinghand/09-Movie-Finder/issues"
+  },
+  "homepage": "https://github.com/wishinghand/09-Movie-Finder",
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "angular-toastr": "^2.0.0",
+    "angular-ui-router": "^0.3.1",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-inject": "^4.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^2.3.2",
+    "run-sequence": "^1.2.2"
+  }
+}

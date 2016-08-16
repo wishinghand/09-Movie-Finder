@@ -19,4 +19,4 @@ and then
 gulp serve
 ```
 
-to get it working on localhost. Defaults to port 8887, which is configurable in the gulpfile in the 'connect' task.
+to get it working on localhost. Defaults to port 8889, which is configurable in the gulpfile in the 'connect' task.
