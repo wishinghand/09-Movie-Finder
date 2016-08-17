@@ -17,6 +17,7 @@
         function searchMovies() {
             return movieFactory.searchMovies(vm.searchTerm).then(
                 function(data) {
+                    console.log(data);
                     vm.movieResults = data;
                 },
                 function(error) {

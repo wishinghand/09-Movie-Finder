@@ -10,7 +10,8 @@
     /* @ngInject */
     function movieFactory($http, $q, baseURL) {
         var service = {
-            searchMovies: searchMovies
+            searchMovies: searchMovies,
+            getMovieDetails: getMovieDetails
         };
         return service;
 
@@ -28,11 +29,25 @@
                     defer.reject(response.data.Error);
                 }
                 defer.resolve(response.data.Search);
-            }).then(function(response){
+            }, function(response){
                 defer.reject("Server not found");
             });
 
             return defer.promise;
+        }
+
+        function getMovieDetails(movieId) {
+            var query = "i=" + movieId;
+
+            return $http({
+                method: "GET",
+                url: baseURL + query
+            }).then(function(response) {
+                console.log(response);
+                return response.data;
+            }, function(response) {
+                return "ERROR";
+            });
         }
     }
 })();

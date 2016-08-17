@@ -12,7 +12,7 @@
         <p>{{movie.Title}} - {{movie.Year}}</p>
         <img ng-src="{{movie.Poster}}" alt="" class="imgControl">
         <div>
-            <a href="">Click to read details</a>
+            <a ui-sref="detail({movieId:movie.imdbID})">Click to read details</a>
         </div>
     </div>
 </div>
