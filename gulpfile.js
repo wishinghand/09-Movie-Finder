@@ -25,7 +25,7 @@ gulp.task('concatJs', function(){
 
 /**CSS gulp tasks*****************************************************************/
 gulp.task('compileSass', function(){
-    return gulp.src(['node_modules/angular-toastr/dist/angular-toastr.css', 'src/css/vital.css', './src/css/*.scss'])
+    return gulp.src(['node_modules/angular-toastr/dist/angular-toastr.css', 'src/css/vital.css', 'node_modules/animate.css/animate.min.css', './src/css/*.scss'])
     .pipe(sass())
     //and concatenates them
     .pipe(concat('build.css'))
