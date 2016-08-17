@@ -1,6 +1,6 @@
 (function() {
     'use strict';
-    angular.module('app', ['ui.router'])
+    angular.module('app', ['ui.router', 'toastr'])
     .value('baseURL', 'http://www.omdbapi.com/?')
     .config(function($urlRouterProvider, $stateProvider){
         $urlRouterProvider.otherwise('/search');

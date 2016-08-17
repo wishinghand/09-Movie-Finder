@@ -20,14 +20,19 @@
             var query = 's=' + movieTitle;
             var defer = $q.defer();
 
-            return $http({
+            $http({
                 method: "GET",
                 url: baseURL + query
             }).then(function(response){
-                return response.data;
+                if(response.data.Response === "False"){
+                    defer.reject(response.data.Error);
+                }
+                defer.resolve(response.data.Search);
             }).then(function(response){
-                return response;
-            })
+                defer.reject("Server not found");
+            });
+
+            return defer.promise;
         }
     }
 })();

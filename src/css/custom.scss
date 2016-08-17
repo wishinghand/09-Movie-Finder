@@ -1,3 +1,16 @@
 .text-center {
   text-align: center;
 }
+
+.movieDiv{
+    min-height: 370px;
+}
+
+.imgControl{
+    max-height: 300px
+}
+
+input:focus, input:hover{
+    border-color: #5A9FC8;
+    box-shadow: 0 0 10px rgba(0,0,255,0.2)
+}
