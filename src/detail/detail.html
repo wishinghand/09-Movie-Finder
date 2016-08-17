@@ -1,10 +1,12 @@
-<div>
-    <p>{{detail.movieDetails.Title}}</p>
-    <p>{{detail.movieDetails.Released}}</p>
-    <p>{{detail.movieDetails.Rated}}</p>
-    <p>{{detail.movieDetails.Runtime}}</p>
-    <p>{{detail.movieDetails.Plot}}</p>
-    <p>{{detail.movieDetails.Director}}</p>
-    <p>{{detail.movieDetails.Actors}}</p>
-    <img ng-src="{{detail.movieDetails.Poster}}" alt="" class="detailImg">
+<div class="detail-div">
+    <div class="main-text"><h1><strong>Title</strong>: {{detail.movieDetails.Title}}</h1></div>
+    <div class="main-text"><strong>Released</strong>: {{detail.movieDetails.Released}}</div>
+    <div class="main-text"><strong>Director</strong>: {{detail.movieDetails.Director}}</div>
+    <div class="main-text"><strong>Rating</strong>: {{detail.movieDetails.Rated}}</div>
+    <div class="main-text"><strong>Runtime</strong>: {{detail.movieDetails.Runtime}}</div>
+    <div class="main-text"><strong>Actors</strong>: {{detail.movieDetails.Actors}}</div>
+    <div class="main-text"><strong>Plot Synopsis</strong>: {{detail.movieDetails.Plot}}</div>
+    <div class="flexy">
+        <img ng-src="{{detail.movieDetails.Poster}}" alt="" class="detail-img">
+    </div>
 </div>

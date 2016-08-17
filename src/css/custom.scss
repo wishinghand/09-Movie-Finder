@@ -1,5 +1,5 @@
 body {
-  background: rgba(34,50,64,1);
+  background: rgba(49,74,95, 1);
 }
 
 h1 {
@@ -14,6 +14,10 @@ h1 {
   background: rgba(255,255,255,1);
 }
 
+.btn:hover{
+  background: rgba(166, 126, 91, 1);
+}
+
 a {
   color: rgba(217,171,115,1);
 }
@@ -22,10 +26,15 @@ a:hover{
   color: rgba(242,205,136,1);
 }
 
+.main-text  {
+  color: #FFFFFF;
+}
+
 // header
 .header  {
   height: 2em;
   padding-top: 1%;
+  white-space: nowrap;
 }
 
 .header-image {
@@ -54,10 +63,6 @@ a:hover{
   clear:both;
 }
 
-.search-title  {
-  color: #FFFFFF;
-}
-
 .search-image{
   min-height: 300px;
   max-height: 300px;
@@ -66,4 +71,26 @@ a:hover{
 input:focus, input:hover{
     border-color: #5A9FC8;
     box-shadow: 0 0 10px rgba(0,0,255,0.2);
+}
+
+//detail
+.flexy{
+  display: flex;
+  justify-content: center;
+}
+
+.detail-div{
+  padding: 5%;
+}
+
+.detail-img{
+  margin-top: 3%;
+}
+
+@media only screen and (min-width: 640px)  {
+  .detail-div{
+    padding: 5%;
+    padding-right: 15%;
+    padding-left: 15%;
+  }
 }

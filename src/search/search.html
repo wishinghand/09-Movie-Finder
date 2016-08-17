@@ -9,8 +9,8 @@
 
 <div class="padded search-results">
     <div class="col-1-3 search-div text-center animated fadeIn" ng-repeat="movie in search.movieResults">
-        <div class="search-title">{{movie.Title}}</div>
-        <div class="search-title">{{movie.Year}}</div>
+        <div class="main-text">{{movie.Title}}</div>
+        <div class="main-text">{{movie.Year}}</div>
         <img ng-src="{{movie.Poster}}" alt="" class="search-image">
         <div>
             <a ui-sref="detail({movieId:movie.imdbID})">Click to read details</a>
