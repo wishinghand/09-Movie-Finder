@@ -37,13 +37,12 @@
         }
 
         function getMovieDetails(movieId) {
-            var query = "i=" + movieId;
+            var query = "i=" + movieId + "&plot=full";
 
             return $http({
                 method: "GET",
                 url: baseURL + query
             }).then(function(response) {
-                console.log(response);
                 return response.data;
             }, function(response) {
                 return "ERROR";

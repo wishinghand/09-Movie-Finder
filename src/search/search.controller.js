@@ -14,6 +14,13 @@
         vm.searchMovies = searchMovies;
         vm.movieResults;
 
+        activate();
+
+        function activate() {
+            vm.searchTerm = "Star Wars";
+            searchMovies();
+        }
+
         function searchMovies() {
             return movieFactory.searchMovies(vm.searchTerm).then(
                 function(data) {

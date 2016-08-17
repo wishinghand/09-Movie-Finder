@@ -10,7 +10,7 @@
     /* @ngInject */
     function DetailController(movieFactory, $stateParams) {
         var vm = this;
-        vm.movieDetails = [];
+        vm.movieDetails = {};
 
         activate();
 
@@ -19,8 +19,11 @@
             movieFactory.getMovieDetails(movieId).then(
                 function(data) {
                     vm.movieDetails = data;
+                },
+                function(error) {
+
                 }
-            )
+            );
 
         }
     }

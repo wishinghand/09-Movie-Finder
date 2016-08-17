@@ -8,8 +8,32 @@
     <!-- endinject -->
 </head>
 <body class="components components_index">
-    <h1 class="header text-center">Movie Nerd</h1>
+    <!-- header -->
+    <div>
+        <h1 class="header">Movie Nerd
+            <img src="src/images/reel.png" class="header-image">
+            <img src="src/images/camera.png" class="header-image">
+            <img src="src/images/clapper.png" class="header-image">
+            <img src="src/images/popcorn.png" class="header-image">
+            <img src="src/images/theater.png" class="header-image">
+        </h1>
+    </div>
+
+    <!-- content -->
     <div ui-view></div>
+
+    <!-- footer -->
+    <div class="row footer center">
+        <div class="section">
+            <p>
+               <strong><a href="https://github.com/wishinghand/09-Movie-Finder">Movie Finder</a></strong> built by <a href="http://qobbler.com">Jason Land</a> and <a href="https://github.com/Ailuridaes">Katherine Marino</a>. The source code is licensed
+               <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+               is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
+             </p>
+            <hr class="small" />
+            <p></p>
+        </div>
+    </div>
 
     <!-- inject:js -->
     <script src="build/build.js"></script>
