@@ -10,6 +10,7 @@
     /* @ngInject */
     function SearchController(movieFactory, toastr) {
         var vm = this;
+        //the ng-model variable
         vm.searchTerm = "";
         vm.searchMovies = searchMovies;
         vm.movieResults;

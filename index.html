@@ -2,7 +2,7 @@
 <html lang="en" ng-app="app">
 <head>
     <meta charset="UTF-8">
-    <title>Movie Finder</title>
+    <title>What was that movie...?</title>
     <!-- inject:css -->
     <link rel="stylesheet" href="build/build.css">
     <!-- endinject -->
@@ -10,17 +10,19 @@
 <body class="components components_index">
     <!-- header -->
     <div>
-        <h1 class="header">Movie Nerd
-            <img src="src/images/reel.png" class="header-image">
-            <img src="src/images/camera.png" class="header-image">
-            <img src="src/images/clapper.png" class="header-image">
-            <img src="src/images/popcorn.png" class="header-image">
-            <img src="src/images/theater.png" class="header-image">
-        </h1>
+        <a href="index.html"><h1 class="header">Movie Buddy
+                <img src="src/images/reel.png" class="header-image">
+                <img src="src/images/camera.png" class="header-image">
+                <img src="src/images/clapper.png" class="header-image">
+                <img src="src/images/popcorn.png" class="header-image">
+                <img src="src/images/theater.png" class="header-image">
+            </h1></a>
     </div>
 
     <!-- content -->
-    <div ui-view></div>
+    <main>
+        <div ui-view></div>
+    </main>
 
     <!-- footer -->
     <div class="row footer center">
