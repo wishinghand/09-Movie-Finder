@@ -1,6 +1,5 @@
-# Project 9 at Origin Code Academy
-## Movie Finder using OMBD
-### Technologies Used:
+# Movie Finder using OMBD
+## Technologies Used:
 - HTML
 - CSS
     + Vital.css Framework
